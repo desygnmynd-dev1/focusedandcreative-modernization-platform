@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,3 +72,7 @@ export default defineConfig([
   },
 ])
 ```
+=======
+# focusedandcreative-modernization-platform
+Focused &amp; Creative Modernization Platform is a React-based, accessibility-first digital transformation marketing and prototype platform designed to demonstrate enterprise modernization strategy, WCAG/ADA compliance expertise, and scalable architecture for government and enterprise clients.
+>>>>>>> 1525378de1d7e8652126ce5b138e7e555ad1404d
