@@ -76,4 +76,66 @@ App.jsx
 | `dev` | Integration |
 | `feature/*` | Feature development |
 
+---
+
 ### Branch Naming Convention
+
+feature/FACMP-#-short-description
+
+---
+
+### Commit Format
+
+FACMP-#: Short description
+
+Example: FACMP-3: Implement services grid layout
+
+---
+
+## ♿ Accessibility Commitment
+
+This project adheres to:
+
+- WCAG 2.2 AA Standards
+- Semantic HTML structure
+- Visible focus states
+- Keyboard navigation support
+- Accessible error messaging
+- Reduced motion support
+
+Accessibility is treated as a first-class architectural requirement.
+
+---
+
+## 🚀 Deployment Options
+
+This platform can be deployed to:
+
+- **Vercel** (Recommended)
+- GitHub Pages
+- Netlify
+
+---
+
+## 🔮 Future Roadmap
+
+- API integration (Supabase / PostgreSQL)
+- Compliance audit dashboard
+- Role-based authentication
+- Accessibility reporting tools
+- Next.js full-stack migration
+- Governance tracking system
+
+---
+
+## 🏢 Author
+
+**Focused & Creative**  
+Digital Modernization & Accessibility Compliance Partner
+
+---
+
+## 📜 License
+
+MIT License (if applicable)  
+
