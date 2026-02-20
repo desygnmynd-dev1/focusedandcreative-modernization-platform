@@ -1,24 +1,30 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Home from './pages/Home'
+import Services from './pages/Services'
+import Framework from './pages/Framework'
+import Cases from './pages/Cases'
+import Contact from './pages/Contact'
 import './App.css'
 
 type Page = 'home' | 'services' | 'framework' | 'cases' | 'contact'
 
 function App() {
+  
   const [activePage, setActivePage] = useState<Page>('home')
 
   const renderPage = () => {
     switch (activePage) {
       case 'home':
-        return <h2>Home Section</h2>
+        return <Home />
       case 'services':
-        return <h2>Services Section</h2>
+        return <Services />
       case 'framework':
-        return <h2>Framework Section</h2>
+        return <Framework />
       case 'cases':
-        return <h2>Case Studies Section</h2>
+        return <Cases />
       case 'contact':
-        return <h2>Contact Section</h2>
+        return <Contact />
       default:
         return null
     }
@@ -33,40 +39,5 @@ function App() {
     </>
   )
 }
-
-const styles = {
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '1rem 2rem',
-    borderBottom: '1px solid #e5e7eb'
-  },
-  logo: {
-    fontSize: '1.2rem',
-    margin: 0
-  },
-  navList: {
-    display: 'flex',
-    gap: '1rem',
-    listStyle: 'none',
-    margin: 0,
-    padding: 0
-  },
-  navButton: {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    padding: '0.5rem 0.75rem',
-    fontSize: '0.9rem'
-  },
-  active: {
-    borderBottom: '2px solid black',
-    fontWeight: 600
-  },
-  main: {
-    padding: '2rem'
-  }
-} as const
 
 export default App
