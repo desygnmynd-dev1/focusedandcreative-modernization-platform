@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Header from './components/Header'
 import './App.css'
 
 type Page = 'home' | 'services' | 'framework' | 'cases' | 'contact'
@@ -24,33 +25,12 @@ function App() {
   }
 
   return (
-    <div>
-      <header style={styles.header}>
-        <h1 style={styles.logo}>Focused & Creative</h1>
-
-        <nav>
-          <ul style={styles.navList}>
-            {(['home', 'services', 'framework', 'cases', 'contact'] as Page[]).map((page) => (
-              <li key={page}>
-                <button
-                  onClick={() => setActivePage(page)}
-                  style={{
-                    ...styles.navButton,
-                    ...(activePage === page ? styles.active : {})
-                  }}
-                >
-                  {page.charAt(0).toUpperCase() + page.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
-
-      <main style={styles.main}>
+    <>
+      <Header activePage={activePage} setActivePage={setActivePage} />
+      <main style={{ padding: '2rem' }}>
         {renderPage()}
       </main>
-    </div>
+    </>
   )
 }
 
